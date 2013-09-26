@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="common">
+
+	<!--
+	 * WORK CODE	: W001
+	 * DESCRIPTION	: 서버시간조회
+	 * 
+	 * RFID 연계모듈의 시간정보를 조회 한다. 전달 값은 없으며 서버시간을 전송 한다.
+	-->
+	<select id="getServerTime" resultClass="String">
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') FROM DUAL
+	</select>
+	
+	<!--
+	 * WORK CODE	: W002
+	 * DESCRIPTION	: 사용자조회
+	 * 
+	 * 부서코드와 사용자 로그인 ID로 사용자정보를 조회 한다.
+	 * 조회된 정보가 없거나 같은 사용자 로그인 ID를 가진 여러 사용자 정보가 조회 될 수 있다.
+	-->
+	<select id="getUserInfo" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT USER_ID, USER_NM, DEPT_CD, POS, RANK
+	FROM   TB_STUSER
+	WHERE  USE_FLAG = '1'
+	<isNotEmpty property="DEPT_CD">
+	AND    DEPT_CD = #DEPT_CD#
+	</isNotEmpty>
+	<isNotEmpty property="LOGIN_USER_ID">
+	AND    LOGIN_USER_ID LIKE #LOGIN_USER_ID#
+	</isNotEmpty>
+	ORDER  BY USER_NM
+	</select>
+	
+	<!--
+	 * WORK CODE	: W003
+	 * DESCRIPTION	: 공통코드조회
+	 * 
+	 * 표준기록관리시스템의 공통코드 정보를 조회 한다.
+	 * 공통코드 정보가 없거나 여러 공통코드 정보가 조회될 수 있다.
+	-->
+	<select id="getCommonCodeInfo" resultClass="java.util.HashMap">
+	SELECT COM_TYPE_CD, COM_CD, COM_CD_NM
+	FROM   TB_ZZCOMCD
+	WHERE  1=1
+	<isNotEmpty property="COM_TYPE_CD">
+	AND    COM_TYPE_CD = #COM_TYPE_CD#
+	</isNotEmpty>	
+	AND    USE_FLAG = '1'
+	ORDER  BY COM_CD
+	</select>
+	
+	<!--
+	 * WORK CODE	: W004
+	 * DESCRIPTION	: 위치정보조회
+	 * 
+	 * 사용자의 ID로 표준기록관리시스템의 서고, 서가 정보를 조회 한다.
+	 * 사용자가 소속된 기록관의 정보만 조회 되며 조회된 정보가 없거나 여러 서고, 서가 정보가 조회 될 수 있다
+	-->
+	<select id="getRecordLocInfo" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT A.STAKRM_ID, B.STAKRM_NM, A.BOOKSF_ID, A.BOOKSF_NM, A.SHELF_C_CNT, A.SHELF_R_CNT
+	FROM   TB_SRBOOKSF A
+	,      TB_SRSTAKRM B
+	,      TB_STUSER C
+	WHERE  C.USER_ID = #USER_ID#
+	AND    C.RECORD_CENTER_ID = A.RECORD_CENTER_ID
+	AND    A.RECORD_CENTER_ID = B.RECORD_CENTER_ID
+	AND    A.STAKRM_ID = B.STAKRM_ID
+	ORDER  BY A.BOOKSF_ID
+	</select>
+	
+	<!--
+	 * WORK CODE	: W007
+	 * DESCRIPTION	: 정수점검 계획을 조회
+	 * 
+	 * 사용자의 ID로 표준기록관리시스템의 정수점검 계획 정보를 조회 한다.
+	 * 조회된 정보가 없거나 여러 정수점검계획 정보가 조회 될 수 있다.
+	 * 
+	 * SELECT(계획서, 점검결과등록) 
+	-->
+	<select id="findCntChkPlan" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT DISTINCT(A.CNTCHK_ID)		<!-- 계획서번호 -->
+	     , A.PLAN_YMD		    		<!-- 계획일자 -->
+	     , C.USER_NM WORK_USER_NM 		<!-- 담당자이름 -->
+	     , A.CHECK_STATE_CD				<!-- 상태 -->
+	  FROM TB_SRCNTCHK A, TB_STUSER C
+	 WHERE A.WORK_USER_ID = C.USER_ID
+	   AND A.RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#)
+	   AND A.RECORD_CENTER_ID = C.RECORD_CENTER_ID
+	</select>
+		
+	<!--
+	 * WORK CODE	: W008
+	 * DESCRIPTION	: 정수점검 상세 조회
+	 * 
+	 * 사용자의 ID와 계획서 번호로 표준기록관리시스템의 정수점검 상세 정보를 조회 한다.
+	 * 하나에서 여러 개의 정수점검상세 정보가 조회 될 수 있다.
+	-->
+	<select id="findCntChkPlanDetl" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT C.STAKRM_MNG_NO
+	,      C.TITLE
+	,      C.CREAT_YYYY
+	,      C.PRESV_TERM_CD
+	,      B.BOOKSF_ID||'-'||D.BOOKSF_SHELF_CNO||'-'||D.BOOKSF_SHELF_RNO ARNG_INFO
+	,      '0544092CB48D3CA070C30D85' AS TAG_ID
+	,      B.DEFCT_FLAG
+	,      B.HANDL_RSLT_CONT
+	,      to_char(to_date(A.CHECK_YMD,'YYYYMMDDHH24MISS'),'YYYY.MM.DD') CHECK_YMD
+	FROM   TB_SRCNTCHK A
+	,      TB_SRCNTCHKDETL B
+	,      TB_RDFOLDER C
+	,      TB_SRBOOKSFARNGDETL D
+	WHERE  A.RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER AA WHERE AA.USER_ID = #USER_ID#)
+	AND    A.CNTCHK_ID = #CNTCHK_ID#
+	AND    A.CNTCHK_ID = B.CNTCHK_ID 
+	AND    A.RECORD_CENTER_ID = B.RECORD_CENTER_ID
+	AND    B.FOLDER_ID = C.FOLDER_ID
+	AND    B.RECORD_CENTER_ID = D.RECORD_CENTER_ID
+	AND    C.FOLDER_ID = D.FOLDER_ID
+	</select>
+	
+	<!--
+	 * WORK CODE	: W009
+	 * DESCRIPTION	: 정수점검 상세 결과 등록
+	 * 
+	 * 사용자의 ID와 계획서번호로 정수점검상세결과 정보를 표준기록관리시스템에 등록 한다.
+	 * PARAM_LIST는 하나 혹은 여러 개의 정보를 가질 수 있다.
+	 * 모든 PARAM_LIST는 각각의 정수점검 상세 결과 등록 결과를 반환 한다.
+	 * 정수점검 계획의 모든 정수점검 상세 결과가 등록되면 계획의 상태가 미점검에서 결과등록으로 바뀐다.
+	-->
+	<update id="updateCntChkDetlRslt" parameterClass="java.util.HashMap">
+	UPDATE TB_SRCNTCHKDETL
+	   SET DEFCT_FLAG = #DEFCT_FLAG#
+	     , HANDL_RSLT_CONT = #HANDL_RSLT_CONT#
+	 WHERE CNTCHK_ID = #CNTCHK_ID#
+	   AND FOLDER_ID = (SELECT AA.FOLDER_ID FROM TB_RDFOLDER AA WHERE AA.TAG_ID = #TAG_ID#) 
+	   AND RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER AA WHERE AA.USER_ID = #USER_ID#)
+	</update>
+	
+	<!--
+	 * WORK CODE	: W010 - 01
+	 * DESCRIPTION	: '정수점검 상세결과 등록' 완료 목록 조회
+	-->
+	<select id="findCntChkDetlRslt" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT CNTCHK_ID, RECORD_CENTER_ID, CHECK_YMD
+	FROM   TB_SRCNTCHKDETL
+	WHERE  CNTCHK_ID = #CNTCHK_ID#
+	AND    RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER AA WHERE AA.USER_ID = #USER_ID#)
+
+	</select>
+	
+	<!--
+	 * WORK CODE	: W010 - 02
+	 * DESCRIPTION	: 정수점검 결과 등록
+	 * 
+	 * 사용자의 ID와 계획서번호로 정수점검 결과 정보를 표준기록관리시스템에 등록 한다.
+	 * PARAM_LIST는 하나의 정보를 가질 수 있다.
+	 * 모든 PARAM_LIST는 각각의 정수점검 상세 결과등록 결과를 반환 한다.
+	 * 정수점검 계획의 모든 정수점검 상세 결과가 등록되어야 정수점검 결과를 등록 할 수 있다.
+	 * 
+	 * UPDATE(정수점검:점검상태(1-결과등록 or 2-점검완료),점검일자)
+	-->
+	<update id="UpdateCntChkRslt" parameterClass="java.util.HashMap">	
+		UPDATE TB_SRCNTCHK
+		   SET CHECK_STATE_CD = #CHECK_STATE_CD#
+		     , CHECK_YMD = #CHECK_YMD#
+		 WHERE CNTCHK_ID = #CNTCHK_ID#
+		   AND RECORD_CENTER_ID = #RECORD_CENTER_ID#
+	</update>
+	
+	<!--
+	 * 
+	 * SELECT(서가배치:일련번호구하기)
+	 * 
+	-->
+	<select id="findBooksfArngSno" parameterClass="java.util.HashMap" resultClass="String">
+	SELECT NVL(MAX(Sno),0) + 1 SNO
+	  FROM TB_SRBOOKSFARNG
+	 WHERE ARNG_YYYY = #_ARNG_YYYY#
+	   AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+	</select>
+	
+	<!--
+	 * 
+	 * CREATE(서가배치:작성완료)
+	 * ARNG_YMD 컬럼 제외 (웹 화면에서 사용자에게 입력받는 컬럼으로 유추됨)
+	 * 
+	-->
+	<insert id="createBooksfArng" parameterClass="java.util.HashMap">
+	INSERT INTO TB_SRBOOKSFARNG
+  	(
+  		RECORD_CENTER_ID, 
+  		BOOKSF_ARNG_ID,
+  		ARNG_YYYY,
+  		SNO, 
+        ARNG_YMD,
+        WORK_USER_ID,
+        WORK_DTIME,
+        FIN_FLAG
+	)
+  	VALUES
+  	(
+  		#_RECORD_CENTER_ID#,
+  		#_BOOKSF_ARNG_ID#,
+  		#_ARNG_YYYY#,
+  		#_SNO#, 
+  		#_ARNG_YMD#,
+  		#_USER_ID#,
+  		(Select to_char(sysdate,'YYYYMMDDHHMMSS') from dual),
+  		'0'
+  	)
+	</insert>
+	
+	<!--
+	 * 
+	 * SELECT(반출:일련번호구하기)
+	 * 
+	-->
+	<select id="findCarryOutSno" resultClass="String" parameterClass="java.util.HashMap">
+		SELECT NVL(MAX(OUT_SNO),0) + 1 OUT_SNO
+		  FROM TB_SROUT
+		 WHERE OUT_YYYY = #_OUT_YYYY#
+		   AND RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#)
+	</select>
+	
+	<!--
+	 * 
+	 * INSERT(반출)
+	 * 
+	-->
+	<insert id="createCarryOut" parameterClass="java.util.HashMap">
+	INSERT INTO TB_SROUT 
+	(
+	    RECORD_CENTER_ID,
+	    OUT_ID,
+	    OUT_YYYY,
+	    OUT_SNO,
+	    OUT_YMD,
+	    OUT_TYPE_CD,
+	    RETRN_EXPT_YMD,
+	    OUT_RSN
+	)
+	VALUES
+	(
+	    #_RECORD_CENTER_ID#,
+	    #_OUT_ID#,
+	    #_OUT_YYYY#,
+	    #_OUT_SNO#,
+	    #_OUT_YMD#,
+	    #OUT_TYPE_CD#,
+	    #RETURN_EXP_YMD#,
+	    #OUT_RSN#
+	)
+	</insert>
+	
+	<!--
+	 * 
+	 * SELECT (Temp:반출 철목록)
+	 * 
+	-->
+	<select id="findTemp"  resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+		SELECT TRGT_ID FOLDER_ID
+		  FROM TB_ZZREQLISTTEMP
+		 WHERE USER_ID = #USER_ID#
+		   AND REMK='CARRYOUT'
+	</select>
+	
+	<!--
+	 * 
+	 * INSERT(반출입기록물철)
+	 * 
+	-->
+	<insert id="createInOutFolder" parameterClass="java.util.HashMap">
+	INSERT INTO TB_SRINOUTFOLDER 
+	(
+		RECORD_CENTER_ID,
+		OUT_ID,
+		FOLDER_ID,
+		IN_ID,
+		IN_FLAG,
+		REG_DTIME
+	)		
+	VALUES
+	(
+		#_RECORD_CENTER_ID#,
+		#_OUT_ID#,
+		#_FOLDER_ID#,
+		'',
+		'0',
+		(Select to_char(sysdate,'YYYYMMDDHHMMSS') from dual)
+	)
+	</insert>
+	
+	<!--
+	 * 
+	 * UPDATE(기록물철:반출여부)
+	 * 
+	-->
+	<update id="updateOutFolder" parameterClass="java.util.HashMap">
+		UPDATE TB_RDFOLDER
+		   SET OUT_FLAG = #_OUT_FLAG#
+		 WHERE FOLDER_ID IN (SELECT FOLDER_ID
+		                       FROM TB_SRINOUTFOLDER
+		                      WHERE OUT_ID = #_OUT_ID#
+		                        AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#)
+           AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#		                        
+	</update>	
+	
+	
+	<update id="updateCarryOutTemp" parameterClass="java.util.HashMap">
+	UPDATE TB_ZZREQLISTTEMP
+	   SET INOUT_ID = #_OUT_ID#
+	 WHERE RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+	   AND TRGT_ID = #_FOLDER_ID#
+	   AND REMK = 'CARRYOUT'
+	</update>
+	
+	<!--
+	 * 
+	 * SELECT(반입:일련번호구하기)
+	 * 
+	-->
+	<select id="findCarryInSno" parameterClass="java.util.HashMap" resultClass="String">
+		SELECT NVL(MAX(IN_SNO),0) + 1 IN_SNO
+		  FROM TB_SRIN
+		 WHERE IN_YYYY = #_IN_YYYY#
+		   AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+	</select>
+	
+	<!--	
+	 * 
+	 * INSERT(반입)
+	 * 
+	-->
+	<insert id="createCarryIn" parameterClass="java.util.HashMap">
+	INSERT INTO TB_SRIN
+	(
+		RECORD_CENTER_ID,
+		IN_ID,
+		IN_YYYY,
+		IN_SNO,
+		IN_YMD,
+		IN_RSN
+	)
+	VALUES
+	(
+		#_RECORD_CENTER_ID#,
+		#_IN_ID#,
+		#_IN_YYYY#,
+		#_IN_SNO#,
+		#IN_YMD#,
+		#IN_RSN#
+	 )
+	</insert>
+	
+	<!--
+	 * 
+	 * 반입기록물수정
+	 * 
+	-->
+	<update id="updateInFolderFin" parameterClass="java.util.HashMap">
+		UPDATE TB_SRINOUTFOLDER
+		   SET IN_FLAG = '1'
+		     , IN_ID   = #_IN_ID#
+		 WHERE IN_FLAG = '0'		 
+		   AND FOLDER_ID IN (SELECT TRGT_ID
+		                       FROM TB_ZZREQLISTTEMP
+		                      WHERE USER_ID = #USER_ID#
+		                        AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+		                        AND REMK='CARRYIN')
+		   AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+	</update>
+	
+	<!--
+	 * 
+	 * UPDATE(기록물철:반입여부)
+	 * 
+	-->
+	<update id="updateInFolder" parameterClass="java.util.HashMap">
+		UPDATE TB_RDFOLDER
+		   SET OUT_FLAG = '0'
+		 WHERE FOLDER_ID IN (SELECT FOLDER_ID
+		                       FROM TB_SRINOUTFOLDER
+		                      WHERE IN_ID = #_IN_ID#
+		                        AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#)
+		   AND RECORD_CENTER_ID = #_RECORD_CENTER_ID#
+	</update>
+	
+	<!--
+	 * WORK CODE	: W013
+	 * DESCRIPTION	: 유출예방
+	 * 
+	 * 태그 ID로 기록물의 이동가능 여부와 기록물 정보를 조회 한다.
+	 * PARAM_LIST는 하나 혹은 여러 개의 정보를 가질 수 있으며, 각각의 조회 결과를 반환 받는다.
+	-->
+	<select id="getMoveFlag" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+    SELECT B.STAKRM_MNG_NO
+    ,      B.TITLE
+    ,      '0544092CB48D3CA070C30D85' AS TAG_ID
+    --,      B.TAG_ID
+    ,      B.CREAT_YYYY
+    FROM   TB_RDFOLDER B
+    WHERE  B.TAG_ID = #TAG_ID#
+	</select>
+	
+	<!--
+	 * WORK CODE	: W014
+	 * DESCRIPTION	: 탐지조회
+	 * 
+	 * 기록물 철 제목으로 기록물 정보를 조회 한다.
+	 * PARAM_LIST는 하나의 정보를 가질 수 있으며, 조회 결과가 없거나 여러 개의 조회 결과를 가질 수 있다.
+	-->
+	<select id="getRecordInfoByTitle" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT A.TITLE
+	,      A.CREAT_YYYY
+	,      '0544092CB48D3CA070C30D85' AS TAG_ID
+	--,      B.TAG_ID
+	,      B.STAKRM_MNG_NO
+	,      C.BOOKSF_ID||'-'||C.BOOKSF_SHELF_CNO||'-'||C.BOOKSF_SHELF_RNO AS ARNG_INFO
+	FROM   TB_RDRECORD A, TB_RDFOLDER B, TB_SRPRESVBOX C, TB_STUSER Z
+	WHERE  Z.USER_ID = #USER_ID#
+	AND    B.TITLE LIKE '%' || #TITLE# || '%'
+	AND    Z.RECORD_CENTER_ID = A.RECORD_CENTER_ID 
+	AND    A.RECORD_CENTER_ID = B.RECORD_CENTER_ID
+	AND    A.FOLDER_ID = B.FOLDER_ID
+	AND    B.RECORD_CENTER_ID = C.RECORD_CENTER_ID
+	AND    B.PRESV_BOX_ID = C.PRESV_BOX_ID
+	</select>
+	
+	<!--
+	 * WORK CODE	: W015
+	 * DESCRIPTION	: 기록물 정보 조회
+	 * 
+	 * 사용자 ID 와 태그 ID로 제목으로 기록물 정보를 조회 한다.
+	 * PARAM_LIST는 하나 혹은 여러 개의 정보를 가질 수 있으며, 조회 결과가 없거나 여러 개의 조회 결과를 가질 수 있다.
+	-->
+	<select id="getRecordInfoByTag" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+    SELECT A.TITLE
+    ,      A.CREAT_YYYY
+    ,      '0544092CB48D3CA070C30D85' AS TAG_ID
+    --,      B.TAG_ID
+    ,      B.STAKRM_MNG_NO
+    ,      C.BOOKSF_ID||'-'||C.BOOKSF_SHELF_CNO||'-'||C.BOOKSF_SHELF_RNO AS ARNG_INFO
+    FROM   TB_RDRECORD A, TB_RDFOLDER B, TB_SRPRESVBOX C, TB_STUSER Z
+    WHERE  Z.USER_ID = #USER_ID#
+    AND    B.TAG_ID = #TAG_ID#
+    AND    Z.RECORD_CENTER_ID = A.RECORD_CENTER_ID 
+    AND    A.RECORD_CENTER_ID = B.RECORD_CENTER_ID
+    AND    A.FOLDER_ID = B.FOLDER_ID
+    AND    B.RECORD_CENTER_ID = C.RECORD_CENTER_ID
+    AND    B.PRESV_BOX_ID = C.PRESV_BOX_ID
+	</select>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--
+	 *
+	 * 일반 사용자 정보 조회
+	 *
+	-->
+	<select id="getCommonUserInfo" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT * FROM TB_STUSER WHERE USER_ID = #USER_ID#
+	</select>		
+
+</sqlMap>

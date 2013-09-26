@@ -1,0 +1,798 @@
+main> [2013-01-30 12:35:54] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:35:54] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:35:54] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '1311000'
+		AND
+		login_user_id LIKE 'user01'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:36:37] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:36:37] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:36:37] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '1311000'
+		AND
+		login_user_id LIKE 'user01'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:37:05] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:37:05] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:37:06] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:37:49] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:37:49] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:37:49] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:43:15] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:43:15] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:43:15] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:44:03] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:44:03] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:44:03] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:44:03] [RecordService] [125] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:47:32] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:47:32] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:47:32] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] ADDR // null 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] DEPT_CD // 5540000 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] USER_NM // 시스템사용자 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] POS // 운영담당 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] USER_ID // 0000000001 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:47:32] [RecordService] [125] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 12:48:12] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:48:12] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'              AND   dept_cd = ?            AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:48:12] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		dept_cd = '5540000'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] ADDR // null 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] DEPT_CD // 5540000 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] USER_NM // 시스템사용자 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] POS // 운영담당 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] USER_ID // 0000000001 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:48:12] [RecordService] [126] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 12:49:18] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:49:18] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'                       AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:49:18] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] ADDR // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] DEPT_CD // 5540000 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_NM // 시스템사용자 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] POS // 운영담당 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_ID // 0000000001 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] ADDR // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] DEPT_CD // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_NM // 시스템설치자 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] POS // 설치담당 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USER_ID // 0000000000 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:49:18] [RecordService] [126] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 12:50:05] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 12:50:05] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE use_flag = '1'                       AND   login_user_id LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 12:50:05] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE use_flag = '1'
+		AND
+		login_user_id LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] ADDR // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] DEPT_CD // 5540000 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_NM // 시스템사용자 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] POS // 운영담당 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_ID // 0000000001 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RESID_NO // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] ADDR // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] DEPT_CD // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] LOGIN_USER_ID // rmsadmin 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] ONNARA_USERID // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] LOGIN_ERROR_CNT // 0 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] REG_DTIME // 20120316091435 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_NM // 시스템설치자 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] POS // 설치담당 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_PWD // KEpUmH9/wTNrraDMqQn8X/QPyDg= 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RANK // 담당 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] TEL_NO // null 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] RECORD_CENTER_ID // 0000001 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_DIV // 4 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USER_ID // 0000000000 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] SSO_FLAG // 1 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] USE_FLAG // 1 
+main> [2013-01-30 12:50:05] [RecordService] [126] [DEBUG] WORK_FLAG // 1 
+main> [2013-01-30 13:45:42] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 13:45:42] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 13:45:42] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 13:47:33] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 13:47:33] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 13:47:33] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 13:57:07] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 13:57:07] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 13:57:07] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 13:59:59] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 13:59:59] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 13:59:59] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:00:36] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:00:36] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:00:36] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:07:11] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:07:11] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:07:11] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:09:17] [RecordService] [410] [DEBUG] void 
+main> [2013-01-30 14:09:18] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:09:18] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:09:18] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:09:37] [RecordService] [410] [DEBUG] void 
+main> [2013-01-30 14:09:37] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:09:37] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:09:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] int 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] java.lang.Class 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] boolean 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] void 
+main> [2013-01-30 14:09:54] [RecordService] [412] [DEBUG] java.lang.String 
+main> [2013-01-30 14:09:54] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:09:54] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:09:54] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getRecordLocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setRecordLocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setRecordRelocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getInvenCheck // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getDetailInvenCheck // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setDetailInvenCheckResult // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setInvenCheckResult // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setRecordOutPaper // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] setRecordInPaper // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getMoveFlag // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getRecordInfoByTitle // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getRecordInfoByTag // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] invokeMethodTest // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] invokeMethod // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] hashCode // int 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] wait // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] wait // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] wait // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] equals // boolean 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] notify // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] notifyAll // void 
+main> [2013-01-30 14:10:34] [RecordService] [412] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 14:10:34] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:10:34] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:10:34] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getRecordLocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setRecordLocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setRecordRelocInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getInvenCheck // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getDetailInvenCheck // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setDetailInvenCheckResult // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setInvenCheckResult // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setRecordOutPaper // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] setRecordInPaper // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getMoveFlag // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getRecordInfoByTitle // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getRecordInfoByTag // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] invokeMethod // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] hashCode // int 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] wait // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] wait // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] wait // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] equals // boolean 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] notify // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] notifyAll // void 
+main> [2013-01-30 14:12:26] [RecordService] [410] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 14:12:26] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:12:26] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:12:26] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:13:04] [RecordService] [410] [DEBUG] invokeMethodTest // void 
+main> [2013-01-30 14:13:05] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:13:05] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:13:05] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:15:25] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:15:25] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:15:25] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:16:14] [RecordService] [409] [DEBUG] invokeMethodTest // void 
+main> [2013-01-30 14:16:14] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:16:14] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:16:14] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:16:44] [RecordService] [409] [DEBUG] invokeMethodTest // void 
+main> [2013-01-30 14:16:45] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:16:45] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:16:45] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 14:17:20] [RecordService] [409] [DEBUG] invokeMethodTest // void 
+main> [2013-01-30 14:17:20] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 14:17:20] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 14:17:21] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:34:55] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:34:55] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:34:55] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:35:39] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:35:39] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:35:39] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:35:44] [RecordService] [149] [DEBUG]  
+main> [2013-01-30 17:39:20] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:39:20] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:39:20] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:39:24] [RecordService] [150] [DEBUG] |------
+java.lang.Exception
+	at com.jcone.rmsXmlCmd.common.service.RecordService.getUserInfo(RecordService.java:145)
+	at com.jcone.rmsXmlCmd.test.run.ExcuteXmlCmd.processWork(ExcuteXmlCmd.java:92)
+	at com.jcone.rmsXmlCmd.test.run.ExcuteXmlCmd.excute(ExcuteXmlCmd.java:183)
+	at com.jcone.rmsXmlCmd.test.run.Run.main(Run.java:19)
+------
+| 
+main> [2013-01-30 17:40:21] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:40:21] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:40:22] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:42:57] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:42:57] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:42:58] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:43:00] [RecordService] [154] [DEBUG] Exception 
+main> [2013-01-30 17:43:01] [RecordService] [155] [DEBUG] java.lang 
+main> [2013-01-30 17:43:44] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:43:44] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:43:44] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:43:47] [RecordService] [154] [DEBUG] java.lang.Exception 
+main> [2013-01-30 17:44:03] [RecordService] [154] [DEBUG] org.apache.commons.dbcp.SQLNestedException 
+main> [2013-01-30 17:44:43] [RecordService] [154] [DEBUG] org.apache.commons.dbcp.SQLNestedException 
+main> [2013-01-30 17:44:44] [RecordService] [155] [DEBUG] |Cannot create PoolableConnectionFactory (IO 예외 상황: The Network Adapter could not establish the connection)| 
+main> [2013-01-30 17:45:14] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:45:14] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:45:14] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:45:17] [RecordService] [154] [DEBUG] java.lang.Exception 
+main> [2013-01-30 17:45:18] [RecordService] [155] [DEBUG] |test| 
+main> [2013-01-30 17:45:48] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:45:48] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:45:48] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:46:25] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:46:25] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:46:25] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 17:46:33] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 17:46:33] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-30 17:46:33] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+		AND
+		DEPT_CD = '5540000'
+		AND
+		LOGIN_USER_ID LIKE 'rmsadmin'
+	ORDER BY user_nm
+	  
+main> [2013-01-30 19:53:22] [RRecordService] [22] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 19:53:22] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 19:53:22] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 19:53:22] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 19:54:53] [RRecordService] [22] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 19:54:54] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 19:54:54] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 19:54:54] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 19:55:00] [RRecordService] [22] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 19:55:12] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 19:55:12] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 19:55:12] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 19:56:06] [RRecordService] [22] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 19:56:06] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 19:56:06] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 19:56:07] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 19:56:31] [RRecordService] [22] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 19:56:56] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 19:56:56] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 19:56:56] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] proccess // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] hashCode // int 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] equals // boolean 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] notify // void 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] notifyAll // void 
+main> [2013-01-30 20:33:05] [RecordService] [24] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] proccess // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] hashCode // int 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] equals // boolean 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] notify // void 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] notifyAll // void 
+main> [2013-01-30 20:34:39] [RecordService] [24] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] proccess // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] hashCode // int 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] wait // void 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] equals // boolean 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] notify // void 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] notifyAll // void 
+main> [2013-01-30 20:35:17] [RecordService] [24] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 20:35:38] [RecordService] [24] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:35:38] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 20:35:38] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 20:35:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] proccess // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] hashCode // int 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] equals // boolean 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] notify // void 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] notifyAll // void 
+main> [2013-01-30 20:37:56] [RecordService] [26] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] proccess // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] hashCode // int 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] getClass // java.lang.Class 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] wait // void 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] equals // boolean 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] notify // void 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] notifyAll // void 
+main> [2013-01-30 20:38:21] [RecordService] [26] [DEBUG] toString // java.lang.String 
+main> [2013-01-30 20:38:59] [RecordService] [26] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:38:59] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 20:38:59] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 20:38:59] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 20:39:07] [RecordService] [26] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:43:06] [RecordService] [26] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:43:06] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-30 20:43:06] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-30 20:43:06] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-30 20:43:12] [RecordService] [26] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] invoke0 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] invoke 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] invoke 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] invoke 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] doit 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] proccess 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] processWork 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] excute 
+main> [2013-01-30 20:43:12] [RecordService] [63] [DEBUG] main 

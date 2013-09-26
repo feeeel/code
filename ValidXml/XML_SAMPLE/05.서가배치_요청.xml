@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+	<work_info>
+		<work_key>2012071214550000001</work_key>
+		<work_div>WD00</work_div>
+		<work_code>WC005</work_code>
+	</work_info>
+	<send_info ip="127.0.0.1" port="20014" />
+	<receive_info ip="127.0.0.1" port="20013" />
+	<param_list id="0">
+		<param id="USER_ID">0000000001</param>
+		<param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+		<param id="STAKRM_ID">001</param>
+		<param id="BOOKSF_ID">001</param>
+		<param id="SHELF_C_CNT">10</param>
+		<param id="SHELF_R_CNT">10</param>
+		<param id="PRESV_BOX_ID">001001001001001</param>
+		<param id="ARNG_YMD">20121015</param>
+	</param_list>
+	<param_list id="1">
+		<param id="USER_ID">0000000001</param>
+		<param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+		<param id="STAKRM_ID">001</param>
+		<param id="BOOKSF_ID">001</param>
+		<param id="SHELF_C_CNT">10</param>
+		<param id="SHELF_R_CNT">10</param>
+		<param id="PRESV_BOX_ID">001001001001001</param>
+		<param id="ARNG_YMD">20121015</param>
+	</param_list>
+</work_root>

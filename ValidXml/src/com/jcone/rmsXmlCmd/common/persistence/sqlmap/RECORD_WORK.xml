@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="RECORD_WORK">
+
+	<select id="getServerTime" resultClass="String">
+	<![CDATA[
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	]]>
+	</select>
+
+	<select id="getUserInfo" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT *
+	FROM  TB_STUSER
+	WHERE USE_FLAG = '1'
+	<dynamic>
+		<isNotEmpty prepend="AND" property="RECORD_CENTER_ID">
+		RECORD_CENTER_ID = #RECORD_CENTER_ID#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="USER_DIV">
+		USER_DIV = #USER_DIV#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="WORK_FLAG">
+		WORK_FLAG = #WORK_FLAG#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="DEPT_CD">
+		DEPT_CD = #DEPT_CD#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="POS">
+		POS LIKE #POS#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="RANK">
+		RANK LIKE #RANK#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="LOGIN_USER_ID">
+		LOGIN_USER_ID LIKE #LOGIN_USER_ID#
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="USER_NM">
+		USER_NM LIKE #USER_NM#
+		</isNotEmpty>
+	</dynamic>
+	ORDER BY user_nm
+	</select>
+
+	<select id="getCommonCodeInfo" resultClass="java.util.HashMap">
+	SELECT COM_TYPE_CD, COM_CD, COM_CD_NM
+	FROM   TB_ZZCOMCD
+	WHERE  1=1
+	<isNotEmpty property="COM_TYPE_CD">
+	AND    COM_TYPE_CD = #COM_TYPE_CD#
+	</isNotEmpty>	
+	AND    USE_FLAG = '1'
+	ORDER BY COM_CD
+	</select>
+
+	<select id="getRecordLocInfo" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT A.STAKRM_ID, B.STAKRM_NM, A.BOOKSF_ID, A.BOOKSF_NM, A.SHELF_C_CNT, A.SHELF_R_CNT
+	FROM   TB_SRBOOKSF A
+	,      TB_SRSTAKRM B
+	,      TB_STUSER C
+	WHERE  1=1
+	AND    C.USER_ID = #USER_ID#
+	AND    C.RECORD_CENTER_ID = A.RECORD_CENTER_ID
+	AND    A.RECORD_CENTER_ID = B.RECORD_CENTER_ID
+	AND    A.STAKRM_ID = B.STAKRM_ID
+	ORDER  BY A.BOOKSF_ID
+	</select>
+	
+	<insert id="setRecordLocInfo" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</insert>
+	
+	<insert id="setRecordRelocInfo" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</insert>
+
+	<select id="getInvenCheck" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT A.CNTCHK_ID
+	,      A.PLAN_YMD
+	,      B.USER_NM USER_NM
+	,      B.CHECK_STATE_CD
+	FROM   TB_SRCNTCHK A
+	,      TB_STUSER B
+	WHERE  1=1
+	AND    B.USER_ID = #USER_ID#
+	</select>
+	
+	<select id="getDetailInvenCheck" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	SELECT B.STAKRM_MNG_NO
+	,      B.TITLE
+	,      B.CREAT_YYYY
+	,      B.PRESV_TERM_CD
+	,      A.BOOKSF_ID||'-'||C.BOOKSF_SHELF_CNO||'-'||C.BOOKSF_SHELF_RNO ARNG_INFO
+	,      '0544092CB48D3CA070C30D85' AS TAG_ID
+	,      A.DEFCT_FLAG
+	,      A.HANDL_RSLT_CONT
+	,      to_char(to_date(D.CHECK_YMD,'YYYYMMDDHH24MISS'),'YYYY.MM.DD') CHECK_YMD
+	FROM   TB_SRCNTCHKDETL A
+	,      TB_RDFOLDER B
+	,      TB_SRBOOKSFARNGDETL C
+	,      TB_SRCNTCHK D
+	WHERE  1=1
+	AND    A.RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER AA WHERE AA.USER_ID = #USER_ID#)
+	AND    A.CNTCHK_ID = #CNTCHK_ID#
+	AND    A.CNTCHK_ID = D.CNTCHK_ID
+	</select>
+	
+	<insert id="setDetailInvenCheckResult" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</insert>
+	
+	<insert id="setInvenCheckResult" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</insert>
+	
+	<insert id="carryOut.setRecordOutPaper" parameterClass="java.util.HashMap">
+	INSERT INTO TB_SROUT 
+	(
+	    RECORD_CENTER_ID,
+	    OUT_ID,
+	    OUT_YYYY,
+	    OUT_SNO,
+	    OUT_YMD,
+	    OUT_TYPE_CD,
+	    RETRN_EXPT_YMD,
+	    OUT_RSN
+	)
+	VALUES
+	(
+	    (SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#),
+	    #OUT_ID#,
+	    #OUT_YYYY#
+	    #OUT_SNO#,
+	    #OUT_YMD#,
+	    #OUT_TYPE_CD#,
+	    #RETRN_EXP_YMD#,
+	    #OUT_RSN#
+	)
+	</insert>
+	
+	<insert id="carryOut.createInOutFolder" parameterClass="java.util.HashMap">
+		INSERT INTO TB_SRINOUTFOLDER 
+		(
+			RECORD_CENTER_ID,
+			OUT_ID,
+			FOLDER_ID,
+			IN_ID,
+			IN_FLAG,
+			REG_DTIME
+		)		
+		VALUES
+		(
+			(SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#),
+			#OUT_ID#,
+			#FOLDER_ID#,
+			'',
+			'0',
+			(Select to_char(sysdate,'YYYYMMDDHHMMSS') from dual)
+		)
+	</insert>	
+	
+	<select id="carryOut.findReadCarryOutTemp" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+		SELECT B.TRGT_ID FOLDER_ID
+		  FROM TB_ZZREQLISTTEMP B
+		 WHERE B.USER_ID = #USER_ID#
+		   AND RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#)
+		   AND REMK='READCARRYOUT'
+	</select>
+	
+	<select id="carryOut.findCarryOutSno" resultClass="String" parameterClass="java.util.HashMap">
+		SELECT NVL(MAX(OUT_SNO),0) + 1 OUT_SNO
+		  FROM TB_SROUT
+		 WHERE OUT_YYYY = #OUT_YYYY#
+		   AND RECORD_CENTER_ID = (SELECT RECORD_CENTER_ID FROM TB_STUSER WHERE USER_ID = #USER_ID#)
+	</select>
+	
+	<insert id="setRecordInPaper" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</insert>
+	
+	<select id="getMoveFlag" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</select>
+	
+	<select id="getRecordInfoByTitle" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</select>
+	
+	<select id="getRecordInfoByTag" resultClass="java.util.HashMap" parameterClass="java.util.HashMap">
+	<![CDATA[
+	SELECT 1 FROM DUAL
+	]]>
+	</select>
+
+</sqlMap>

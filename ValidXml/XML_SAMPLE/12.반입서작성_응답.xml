@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+	<work_info>
+		<work_key>2012071214550000001</work_key>
+		<work_div>WD00</work_div>
+		<work_code>WC012</work_code>
+	</work_info>
+	<send_info ip="127.0.0.1" port="20013"/>
+	<receive_info ip="127.0.0.1" port="20014"/>
+	<param_list id="1..n">
+		<param id="USER_ID">0000000001</param>
+		<param id="IN_YMD">20121020</param>
+		<param id="IN_RSN">반입사유</param>
+		<param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+		<param id="USER_ID">0000000001</param>
+	</param_list>
+	<return_list id="1">
+		<return_row>
+			<return_col id="INSERT_RESULT">0</return_col>
+			<return_col id="UPDATE_LOG">반입서 작성 로그</return_col>
+		</return_row>
+	</return_list>
+</work_root>

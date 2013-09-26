@@ -1,0 +1,87 @@
+main> [2013-01-31 09:12:40] [RecordService] [26] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 09:12:40] [RecordService] [26] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 09:12:40] [RecordService] [26] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 09:12:41] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-31 09:12:41] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:   SELECT COM_TYPE_CD, COM_CD, COM_CD_NM  FROM   TB_ZZCOMCD  WHERE  1=1     AND    USE_FLAG = '1'  ORDER BY COM_CD   
+main> [2013-01-31 09:12:41] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT COM_TYPE_CD, COM_CD, COM_CD_NM
+	FROM   TB_ZZCOMCD
+	WHERE  1=1
+	AND    USE_FLAG = '1'
+	ORDER BY COM_CD
+	  
+main> [2013-01-31 13:14:39] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:14:39] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-31 13:14:39] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:14:39] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-31 13:14:47] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:15:12] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:15:13] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:15:13] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:15:31] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:15:31] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:16:03] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:16:03] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:19:55] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:19:55] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:20:13] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:20:13] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:20:15] [RecordService] [113] [DEBUG]  
+main> [2013-01-31 13:21:27] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:21:27] [RecordService] [113] [DEBUG]  
+main> [2013-01-31 13:21:50] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:21:50] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:21:50] [RecordService] [113] [DEBUG] Cannot create PoolableConnectionFactory (IO 예외 상황: The Network Adapter could not establish the connection) 
+main> [2013-01-31 13:21:53] [RecordService] [114] [DEBUG]  
+main> [2013-01-31 13:23:01] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:24:57] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:24:57] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:25:27] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:25:27] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:25:28] [RecordService] [68] [DEBUG] IO 예외 상황: The Network Adapter could not establish the connection 
+main> [2013-01-31 13:25:46] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:25:46] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:30:57] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:30:57] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-31 13:30:57] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:30:57] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-31 13:34:38] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:34:38] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-31 13:34:38] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:34:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:34:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Parameters: [] 
+main> [2013-01-31 13:34:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Types: [] 
+main> [2013-01-31 13:35:38] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:38] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-31 13:35:38] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:35:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-31 13:35:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Parameters: [] 
+main> [2013-01-31 13:35:38] [PreparedStatement] [27] [DEBUG] {pstm-100001} Types: [] 
+main> [2013-01-31 13:35:39] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:39] [RecordService] [25] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:39] [RecordService] [25] [DEBUG] mapToRow // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot$ReturnList$ReturnRow 
+main> [2013-01-31 13:35:39] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:39] [Connection] [27] [DEBUG] {conn-100003} Connection 
+main> [2013-01-31 13:35:39] [Connection] [27] [DEBUG] {conn-100003} Preparing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-31 13:35:39] [PreparedStatement] [27] [DEBUG] {pstm-100004} Executing Statement:   SELECT *  FROM  TB_STUSER  WHERE USE_FLAG = '1'              AND   DEPT_CD = ?            AND   LOGIN_USER_ID LIKE ?          ORDER BY user_nm   
+main> [2013-01-31 13:35:39] [PreparedStatement] [27] [DEBUG] {pstm-100004} Parameters: [5540000, rmsadmin] 
+main> [2013-01-31 13:35:39] [PreparedStatement] [27] [DEBUG] {pstm-100004} Types: [java.lang.String, java.lang.String] 
+main> [2013-01-31 13:35:55] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:55] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:55] [RecordService] [25] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:35:55] [RecordService] [25] [DEBUG] mapToRow // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot$ReturnList$ReturnRow 
+main> [2013-01-31 13:35:55] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:41:38] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:41:38] [RecordService] [25] [DEBUG] getServerTime // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:41:38] [RecordService] [25] [DEBUG] getCommonCodeInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 
+main> [2013-01-31 13:41:38] [RecordService] [25] [DEBUG] mapToRow // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot$ReturnList$ReturnRow 
+main> [2013-01-31 13:41:38] [RecordService] [25] [DEBUG] getUserInfo // com.jcone.rmsXmlCmd.common.utils.marshalling.WorkRoot 

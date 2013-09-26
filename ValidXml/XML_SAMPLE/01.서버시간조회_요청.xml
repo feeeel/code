@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+	<work_info>
+		<work_key>2012071214550000001</work_key>
+		<work_div>WD00</work_div>
+		<work_code>WC001</work_code>
+	</work_info>
+	<send_info ip="127.0.0.1" port="20014" />
+	<receive_info ip="127.0.0.1" port="20013" />
+</work_root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+    <work_info>
+        <work_key>2012071214550000001</work_key>
+        <work_div>WD00</work_div>
+        <work_code>WC009</work_code>
+    </work_info>
+    <send_info ip="127.0.0.1" port="20014"/>
+    <receive_info ip="127.0.0.1" port="20013"/>
+    <param_list id="1">
+        <param id="USER_ID">0000000001</param>
+        <param id="CNTCHK_ID">2012000001</param>
+        <param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+        <param id="DEFCT_FLAG">0</param>
+        <param id="HANDL_RSLT_CONT">조치결과</param>
+        <param id="CHECK_YMD">20121017</param>
+    </param_list>
+    <param_list id="2">
+        <param id="USER_ID">0000000001</param>
+        <param id="CNTCHK_ID">2012000001</param>
+        <param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+        <param id="DEFCT_FLAG">0</param>
+        <param id="HANDL_RSLT_CONT">조치결과</param>
+        <param id="CHECK_YMD">20121017</param>
+    </param_list>
+    <return_list id="1">
+        <return_row>
+            <return_col id="UPDATE_RESULT">0</return_col>
+            <return_col id="UPDATE_LOG"></return_col>
+        </return_row>
+    </return_list>
+    <return_list id="2">
+        <return_row>
+            <return_col id="UPDATE_RESULT">0</return_col>
+            <return_col id="UPDATE_LOG"></return_col>
+        </return_row>
+    </return_list>
+</work_root>

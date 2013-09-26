@@ -1,0 +1,63 @@
+main> [2013-01-28 19:16:30] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:16:30] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:16:30] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 19:17:59] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:17:59] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:17:59] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 19:21:20] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:21:20] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:21:20] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 19:22:28] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:22:28] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:22:28] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 19:51:03] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:51:04] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:51:04] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 19:53:05] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 19:53:05] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 19:53:05] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 20:24:56] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 20:24:56] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 20:24:56] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 20:25:50] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 20:25:50] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 20:25:51] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  
+main> [2013-01-28 20:27:22] [Connection] [27] [DEBUG] {conn-100000} Connection 
+main> [2013-01-28 20:27:22] [Connection] [27] [DEBUG] {conn-100000} Preparing Statement:     SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME  FROM DUAL     
+main> [2013-01-28 20:27:22] [PreparedStatement] [27] [DEBUG] {pstm-100001} Executing Statement: 
+		
+	SELECT TO_CHAR(SYSDATE, 'YYYYMMDDHHMISS') AS SERVERTIME
+	FROM DUAL
+	  

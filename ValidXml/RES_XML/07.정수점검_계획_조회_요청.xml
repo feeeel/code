@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+    <work_info>
+        <work_key>2012071214550000001</work_key>
+        <work_div>WD00</work_div>
+        <work_code>WC007</work_code>
+    </work_info>
+    <send_info ip="127.0.0.1" port="20014"/>
+    <receive_info ip="127.0.0.1" port="20013"/>
+    <param_list id="1">
+        <param id="USER_ID">0000000001</param>
+    </param_list>
+    <return_list id="1">
+        <return_row>
+            <return_col id="WORK_USER_NM">시스템사용자</return_col>
+            <return_col id="CHECK_STATE_CD">1</return_col>
+            <return_col id="PLAN_YMD">20121025</return_col>
+            <return_col id="CNTCHK_ID">2012000002</return_col>
+        </return_row>
+    </return_list>
+    <return_list id="2">
+        <return_row>
+            <return_col id="WORK_USER_NM">시스템사용자</return_col>
+            <return_col id="CHECK_STATE_CD">1</return_col>
+            <return_col id="PLAN_YMD">20121017</return_col>
+            <return_col id="CNTCHK_ID">2012000001</return_col>
+        </return_row>
+    </return_list>
+</work_root>

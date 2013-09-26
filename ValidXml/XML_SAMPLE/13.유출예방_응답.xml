@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work_root>
+	<work_info>
+		<work_key>2012071214550000001</work_key>
+		<work_div>WD00</work_div>
+		<work_code>WC013</work_code>
+	</work_info>
+	<send_info ip="127.0.0.1" port="20013"/>
+	<receive_info ip="127.0.0.1" port="20014"/>
+	<param_list id="1..n">
+		<param id="TAG_ID">0544092CB48D3CA070C30D85</param>
+	</param_list>
+	<return_list id="1..n">
+		<return_row>
+			<return_col id="STAKRM_MNG_NO">1310778-2003-05-1-000001</return_col>
+			<return_col id="TITLE">전시기록물 복제</return_col>
+			<return_col id="TAG_ID">0544092CB48D3CA070C30D85</return_col>
+			<return_col id="MOVE_FLAG">0</return_col>
+		</return_row>
+	</return_list>
+</work_root>
